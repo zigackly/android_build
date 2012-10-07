@@ -347,6 +347,11 @@ ADDITIONAL_BUILD_PROPERTIES += net.bt.name=Android
 # the cause of ANRs in the content process
 ADDITIONAL_BUILD_PROPERTIES += dalvik.vm.stack-trace-file=/data/anr/traces.txt
 
+# Add goo.im hooks
+ADDITIONAL_BUILD_PROPERTIES += ro.goo.developerid=zigackly
+ADDITIONAL_BUILD_PROPERTIES += ro.goo.rom=cm10kangzigackly
+ADDITIONAL_BUILD_PROPERTIES += ro.goo.version=$(CM_MYDATE)$(CM_EXTRAVERSION)
+
 # ------------------------------------------------------------
 # Define a function that, given a list of module tags, returns
 # non-empty if that module should be installed in /system.
