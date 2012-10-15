@@ -19,13 +19,22 @@
 # build of the emulator, but all those aspects can be overridden
 # in inherited configurations.
 
-PRODUCT_PACKAGES := \
-    drmserver \
-    libdrmframework \
-    libdrmframework_jni \
-    libfwdlockengine \
-    VideoEditor \
-    WAPPushManager
+ifeq ($(CM_BUILD),wingray)
+    PRODUCT_PACKAGES := \
+        drmserver \
+        libdrmframework \
+        libdrmframework_jni \
+        libfwdlockengine \
+        WAPPushManager
+else
+    PRODUCT_PACKAGES := \
+        drmserver \
+        libdrmframework \
+        libdrmframework_jni \
+        libfwdlockengine \
+        VideoEditor \
+        WAPPushManager
+endif
 
 PRODUCT_PACKAGES += \
     libvideoeditor_jni \
