@@ -346,6 +346,9 @@ ADDITIONAL_BUILD_PROPERTIES += net.bt.name=Android
 # enable vm tracing in files for now to help track
 # the cause of ANRs in the content process
 ADDITIONAL_BUILD_PROPERTIES += dalvik.vm.stack-trace-file=/data/anr/traces.txt
+ADDITIONAL_BUILD_PROPERTIES += ro.goo.developerid=zigackly
+ADDITIONAL_BUILD_PROPERTIES += ro.goo.rom=cm10TabletUIzigackly
+ADDITIONAL_BUILD_PROPERTIES += ro.goo.version=$(CM_MYDATE)1
 
 # ------------------------------------------------------------
 # Define a function that, given a list of module tags, returns
