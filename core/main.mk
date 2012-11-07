@@ -349,7 +349,7 @@ ADDITIONAL_BUILD_PROPERTIES += dalvik.vm.stack-trace-file=/data/anr/traces.txt
 
 # Add goo.im hooks
 ADDITIONAL_BUILD_PROPERTIES += ro.goo.developerid=zigackly
-ADDITIONAL_BUILD_PROPERTIES += ro.goo.rom=cm10kangzigackly
+ADDITIONAL_BUILD_PROPERTIES += ro.goo.rom=cm10kangzigackly2
 ADDITIONAL_BUILD_PROPERTIES += ro.goo.version=$(CM_MYDATE)1
 
 # ------------------------------------------------------------
