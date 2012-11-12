@@ -691,6 +691,12 @@ EOF
     return $?
 }
 
+function omnom
+{
+    brunch $*
+    eat
+}
+
 function gettop
 {
     local TOPFILE=build/core/envsetup.mk
@@ -1161,7 +1167,7 @@ function smoketest()
         return
     fi
 
-    (cd "$T" && mmm tests/SmokeTest) &&
+    (cd "$T" && make SmokeTest SmokeTestApp) &&
       adb uninstall com.android.smoketest > /dev/null &&
       adb uninstall com.android.smoketest.tests > /dev/null &&
       adb install $ANDROID_PRODUCT_OUT/data/app/SmokeTestApp.apk &&
